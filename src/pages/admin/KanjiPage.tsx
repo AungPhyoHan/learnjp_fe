@@ -8,6 +8,7 @@ const KanjiPage = () => {
   const [formData, setFormData] = useState<Word>({
     firstKanji: "",
     firstFurikana: "",
+    katakana: "",
     hirakana: "",
     kunHirakana: "",
     en: "",
@@ -39,6 +40,7 @@ const KanjiPage = () => {
         setFormData({
           firstKanji: "",
           firstFurikana: "",
+          katakana: "",
           hirakana: "",
           kunHirakana: "",
           en: "",
@@ -136,6 +138,15 @@ const KanjiPage = () => {
                 />
               </div>
             </div>
+
+            {/* Katakana */}
+            <InputBoxComponent
+              label="Katakana"
+              value={formData.katakana}
+              onChange={handleChange}
+              name="katakana"
+              isImportant={true}
+            />
 
             {/* Hirakana */}
             <InputBoxComponent

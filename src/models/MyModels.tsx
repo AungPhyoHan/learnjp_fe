@@ -6,6 +6,7 @@ export type Word = {
   firstFurikana: string;
   secondFurikana?: string;
   thirdFurikana?: string;
+  katakana: string;
   hirakana: string;
   kunHirakana: string;
   en: string;
